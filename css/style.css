@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'FontAbhayaLibre';
+  src: url("fonts/AbhayaLibre-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/AbhayaLibre-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/AbhayaLibre-Bold.woff2") format("woff2"), url("fonts/AbhayaLibre-Bold.woff") format("woff"), url("fonts/AbhayaLibre-Bold.ttf") format("truetype"), url("fonts/AbhayaLibre-Bold.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+body {
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  /* Carousel base class */
+  /* Since positioning the image, we need to help out the caption */
+  /* Declare heights because of positioning of img element */
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  /* adds some margin below the link sets  */
+  /* breakpoint and up - mega dropdown styles */
+  /* Footer */
+}
+
+body .carousel {
+  margin-bottom: 4rem;
+}
+
+body .carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+body .carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+
+body .carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+@media (min-width: 40em) {
+  body {
+    /* Bump up size of carousel content */
+  }
+  body .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  body .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  body .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+body .navbar .dropdown-menu div[class*="col"] {
+  margin-bottom: 1rem;
+}
+
+body .navbar .dropdown-menu {
+  border: none;
+  background-color: #fff !important;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    /* remove the padding from the navbar so the dropdown hover state is not broken */
+    /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+    /* makes the dropdown full width  */
+    /* shows the dropdown menu on hover */
+  }
+  body .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  body .navbar .nav-item {
+    padding: .5rem .5rem;
+    margin: 0 .25rem;
+  }
+  body .navbar .dropdown {
+    position: static;
+  }
+  body .navbar .dropdown-menu {
+    width: 100%;
+    left: 0;
+    right: 0;
+    /*  height of nav-item  */
+    top: 45px;
+  }
+  body .navbar .dropdown:hover .dropdown-menu, body .navbar .dropdown .dropdown-menu:hover {
+    display: block !important;
+  }
+  body .navbar .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+body .top-footer {
+  background: #434343;
+  padding: 40px 0;
+  font-size: 14px;
+}
+
+body .top-footer a {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+body .bottom-footer {
+  background: #333;
+  font-size: 12px;
+}
+
+body .bottom-footer ul, body .bottom-footer p {
+  margin-top: 1rem;
+}
+
+body .bottom-footer li {
+  line-height: 20px;
+  padding-right: 10px;
+  border-right: 1px solid #9f9f9f;
+}
+
+body .bottom-footer li:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+body .bottom-footer a {
+  font-size: 12px;
+}
+
+body .social-icons {
+  margin-top: 2rem;
+}
+
+body .social-icons li {
+  padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+  body .border-left-md {
+    border-left: 1px solid #9f9f9f;
+    padding-left: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
