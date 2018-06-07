@@ -7,15 +7,8 @@
 }
 
 body {
-  /* CUSTOMIZE THE CAROUSEL
-  -------------------------------------------------- */
-  /* Carousel base class */
-  /* Since positioning the image, we need to help out the caption */
-  /* Declare heights because of positioning of img element */
-  /* RESPONSIVE CSS
-  -------------------------------------------------- */
-  /* adds some margin below the link sets  */
-  /* breakpoint and up - mega dropdown styles */
+  /* Carousel */
+  /* Navbar */
   /* Footer */
 }
 
@@ -26,6 +19,14 @@ body .carousel {
 body .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+}
+
+@media (min-width: 40em) {
+  body .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
 }
 
 body .carousel-item {
@@ -41,28 +42,11 @@ body .carousel-item > img {
   height: 32rem;
 }
 
-@media (min-width: 40em) {
-  body {
-    /* Bump up size of carousel content */
+@media screen and (min-width: 992px) {
+  body .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
-  body .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-  body .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  body .featurette-heading {
-    margin-top: 7rem;
-  }
-}
-
-body .navbar .dropdown-menu div[class*="col"] {
-  margin-bottom: 1rem;
 }
 
 body .navbar .dropdown-menu {
@@ -70,38 +54,39 @@ body .navbar .dropdown-menu {
   background-color: #fff !important;
 }
 
+body .navbar .dropdown-menu div[class*="col"] {
+  margin-bottom: 1rem;
+}
+
 @media screen and (min-width: 992px) {
-  body {
-    /* remove the padding from the navbar so the dropdown hover state is not broken */
-    /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
-    /* makes the dropdown full width  */
-    /* shows the dropdown menu on hover */
-  }
-  body .navbar {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-  body .navbar .nav-item {
-    padding: .5rem .5rem;
-    margin: 0 .25rem;
-  }
-  body .navbar .dropdown {
-    position: static;
-  }
   body .navbar .dropdown-menu {
     width: 100%;
     left: 0;
     right: 0;
-    /*  height of nav-item  */
     top: 45px;
-  }
-  body .navbar .dropdown:hover .dropdown-menu, body .navbar .dropdown .dropdown-menu:hover {
-    display: block !important;
-  }
-  body .navbar .dropdown-menu {
     border: 1px solid rgba(0, 0, 0, 0.15);
     background-color: #fff;
     color: #000;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body .navbar .nav-item {
+    padding: .5rem .5rem;
+    margin: 0 .25rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body .navbar .dropdown {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body .navbar .dropdown:hover .dropdown-menu,
+  body .navbar .dropdown .dropdown-menu:hover {
+    display: block !important;
   }
 }
 
@@ -121,7 +106,8 @@ body .bottom-footer {
   font-size: 12px;
 }
 
-body .bottom-footer ul, body .bottom-footer p {
+body .bottom-footer ul,
+body .bottom-footer p {
   margin-top: 1rem;
 }
 
