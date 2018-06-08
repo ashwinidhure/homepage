@@ -21,11 +21,23 @@ body .fa-phone {
   }
 }
 
+@media (max-width: 992px) {
+  body .container {
+    max-width: 100%;
+  }
+}
+
 body h2 {
   font-size: 35px;
   color: #444;
   font-family: 'Abhaya Libre', serif;
   font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  body h2 {
+    font-size: 24px;
+  }
 }
 
 body h2 span {
@@ -59,6 +71,75 @@ body header .navbar .nav-item .nav-link {
   padding: 0 10px;
 }
 
+@media (max-width: 767px) {
+  body header .navbar .nav-item .nav-link {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  body header .header-menu .navbar-collapse {
+    position: absolute;
+    top: 62px;
+    left: 1%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    transition: all 0.3s ease-in;
+    z-index: 999;
+    background: #fff;
+  }
+  body header .header-menu .navbar-collapse.collapsing {
+    height: auto;
+    transition: all 0.2s ease;
+    left: 100%;
+  }
+  body header .header-menu .navbar-collapse.show {
+    left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  body header .flag-phone-container {
+    padding: 10px;
+  }
+}
+
+body header .flag-phone-container .flag-dropdown {
+  margin-right: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+body header .flag-phone-container .flag-dropdown img {
+  width: 20px;
+}
+
+body header .flag-phone-container .flag-dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+body header .flag-phone-container .flag-dropdown .fas.fa-angle-down {
+  width: 20px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  margin-left: 5px;
+  line-height: 0;
+  color: #fc6c6e;
+}
+
+body header .flag-phone-container .phone {
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  body header .flag-phone-container .phone {
+    float: right;
+  }
+}
+
 body .carousel.header-carousel {
   margin-bottom: 4rem;
 }
@@ -75,7 +156,11 @@ body .carousel.header-carousel .carousel-item > img {
   min-width: 100%;
 }
 
-@media (min-width: 992px) {
+body .navbar.mega-menu {
+  padding: 10px 5px;
+}
+
+@media (min-width: 769px) {
   body .navbar.mega-menu {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -92,7 +177,7 @@ body .navbar.mega-menu .dropdown-menu div.col-md-8 {
   padding: 30px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 769px) {
   body .navbar.mega-menu .dropdown-menu {
     width: 100%;
     left: 0;
@@ -104,8 +189,10 @@ body .navbar.mega-menu .dropdown-menu div.col-md-8 {
   }
 }
 
-body .navbar.mega-menu .dropdown-menu .nav {
-  padding: 30px 80px;
+@media (min-width: 769px) {
+  body .navbar.mega-menu .dropdown-menu .nav {
+    padding: 30px 80px;
+  }
 }
 
 body .navbar.mega-menu .dropdown-menu .nav .nav-link {
@@ -119,9 +206,21 @@ body .navbar.mega-menu .dropdown-menu figure {
   margin: 0;
 }
 
+@media (max-width: 991px) {
+  body .navbar.mega-menu .navbar-nav > .nav-item {
+    padding: 10px 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  body .navbar.mega-menu .navbar-nav > .nav-item {
+    padding: 0px 8px;
+  }
+}
+
 @media (min-width: 992px) {
   body .navbar.mega-menu .navbar-nav > .nav-item {
-    padding: 8px 25px 8px 8px;
+    padding: 8px 22px 8px 8px;
     margin: 0 4px;
   }
 }
@@ -144,16 +243,39 @@ body .navbar.mega-menu .navbar-nav > .nav-item > .nav-link:hover {
   border-bottom: 2px solid #d6330d;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 769px) {
   body .navbar.mega-menu .dropdown {
     position: static;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 769px) {
   body .navbar.mega-menu .dropdown:hover .dropdown-menu,
   body .navbar.mega-menu .dropdown .dropdown-menu:hover {
     display: block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  body .navbar.mega-menu .navbar-collapse {
+    position: absolute;
+    top: 46px;
+    right: 1%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    transition: all 0.3s ease-in;
+    z-index: 999;
+    background: #f2f1f1;
+  }
+  body .navbar.mega-menu .navbar-collapse.collapsing {
+    height: auto;
+    transition: all 0.2s ease;
+    right: 100%;
+  }
+  body .navbar.mega-menu .navbar-collapse.show {
+    right: 0;
   }
 }
 
@@ -163,6 +285,12 @@ body .form-container .form-header {
 
 body .form-container .form-section {
   border: 1px solid #ccc;
+}
+
+@media (max-width: 767px) {
+  body .form-container .form-section {
+    text-align: center;
+  }
 }
 
 body .form-container .form-section .form-main {
@@ -266,7 +394,7 @@ body .social-icons li {
   padding: 0 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   body .border-left-md {
     border-left: 1px solid #9f9f9f;
     padding-left: 40px;

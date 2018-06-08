@@ -11,9 +11,12 @@ body {
 		transform: rotate(100deg);
 	}
 
-	@media (min-width: 1300px) {
-		.container {
+	.container {
+		@media (min-width: 1300px) {
 			max-width: 1300px;
+		}
+		@media (max-width: 992px) {
+			max-width: 100%;
 		}
 	}
 
@@ -22,6 +25,10 @@ body {
 		color: $color-black;
 		font-family: 'Abhaya Libre', serif;
 		font-weight: bold;
+
+		@media (max-width: 767px) {
+			font-size: 24px;
+		}
 
 		span {
 			position: relative;
@@ -53,6 +60,73 @@ body {
 			color: $color-black;
 			font-weight: normal;
 			padding: 0 10px;
+
+			@media (max-width: 767px) {
+				padding: 10px;
+			}
+		}
+
+		.header-menu {
+			@media (max-width: 767px) {
+				.navbar-collapse {
+					position: absolute;
+					top: 62px;
+					left: 1%;
+					padding-left: 15px;
+					padding-right: 15px;
+					padding-bottom: 15px;
+					width: 100%;
+					transition: all 0.3s ease-in;
+					z-index: 999;
+					background: #fff;
+				}
+				.navbar-collapse.collapsing {
+					height: auto;
+					transition: all 0.2s ease;
+					left: 100%;
+				}
+				.navbar-collapse.show {
+					left: 0;
+				}
+			}
+		}
+
+		.flag-phone-container {
+			@media (max-width: 767px) {
+				padding: 10px;
+			}
+			.flag-dropdown {
+				margin-right: 20px;
+				cursor: pointer;
+				display: inline-block;
+	
+				img {
+					width: 20px;
+				}
+	
+				.dropdown-toggle {
+
+					&::after {
+						display: none;
+					}
+				}
+	
+				.fas.fa-angle-down {
+					width: 20px;
+					text-align: center;
+					vertical-align: middle;
+					font-size: 20px;
+					margin-left: 5px;
+					line-height: 0;
+					color: #fc6c6e;
+				}
+			}
+			.phone {
+				display: inline-block;
+				@media (max-width: 767px) {
+					float: right;
+				}
+			}
 		}
 	}
 
@@ -73,6 +147,8 @@ body {
 	}
 	/* Navbar */
 	.navbar.mega-menu {
+		padding: 10px 5px;
+
 		@media #{$ipad-landscape-view} {
 			padding-top:0px;
 			padding-bottom: 0px;
@@ -95,7 +171,9 @@ body {
 			}
 
 			.nav {
-				padding: 30px 80px;
+				@media #{$ipad-landscape-view} {
+					padding: 30px 80px;
+				}
 
 				.nav-link {
 					font-size: $font-md;
@@ -111,8 +189,14 @@ body {
 		}
 		.navbar-nav {
 			> .nav-item {
-				@media #{$ipad-landscape-view} {
-					padding: 8px 25px 8px 8px;
+				@media (max-width: 991px) {
+					padding: 10px 8px;
+				}
+				@media (max-width: 767px) {
+					padding: 0px 8px;
+				}
+				@media (min-width: 992px) {
+					padding: 8px 22px 8px 8px;
 					margin: 0 4px;
 				}
 	
@@ -147,6 +231,29 @@ body {
 				}
 			}
 		}
+
+		@media (max-width: 767px) {
+			.navbar-collapse {
+				position: absolute;
+				top: 46px;
+				right: 1%;
+				padding-left: 15px;
+				padding-right: 15px;
+				padding-bottom: 15px;
+				width: 100%;
+				transition: all 0.3s ease-in;
+				z-index: 999;
+				background: #f2f1f1;
+			}
+			.navbar-collapse.collapsing {
+				height: auto;
+				transition: all 0.2s ease;
+				right: 100%;
+			}
+			.navbar-collapse.show {
+				right: 0;
+			}
+		}
 	}
 	/* Form section */
 	.form-container {
@@ -155,6 +262,10 @@ body {
 		}
 		.form-section {
 			border: 1px solid #ccc;
+
+			@media (max-width: 767px) {
+				text-align: center;
+			}
 	
 			.form-main {
 				padding: 0 50px;
@@ -254,7 +365,7 @@ body {
 			padding: 0 10px;
 		}
 	}
-	@media (min-width: 768px) {
+	@media (min-width: 767px) {
 		.border-left-md {
 			border-left: 1px solid #9f9f9f;
 			padding-left: 40px;
