@@ -11,6 +11,12 @@ body {
 		transform: rotate(100deg);
 	}
 
+	@media (min-width: 1300px) {
+		.container {
+			max-width: 1300px;
+		}
+	}
+
 	h2 {
 		font-size: 35px;
 		color: $color-black;
@@ -51,30 +57,20 @@ body {
 	}
 
 	/* Carousel */
-	.carousel {
+	.carousel.header-carousel {
 		margin-bottom: 4rem;
-	}
-	.carousel-caption {
-		bottom: 3rem;
-		z-index: 10;
-		p {
-			@media (min-width: 40em) {
-				margin-bottom: 1.25rem;
-				font-size: 1.25rem;
-				line-height: 1.4;
+
+		.carousel-item {
+			height: 32rem;
+			background-color: #777;
+			>img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				min-width: 100%;
 			}
 		}
 	}
-	.carousel-item {
-		height: 32rem;
-		background-color: #777;
-		>img {
-			position: absolute;
-			top: 0;
-			left: 0;
-			min-width: 100%;
-		}
-  	}
 	/* Navbar */
 	.navbar.mega-menu {
 		@media #{$ipad-landscape-view} {
@@ -133,8 +129,8 @@ body {
 					padding: 10px 0;
 	
 					&:hover {
-						color: #d6330d;
-						border-bottom: 2px solid #d6330d;
+						color: $color-red;
+						border-bottom: 2px solid $color-red;
 					}
 				}
 			}
@@ -152,6 +148,76 @@ body {
 			}
 		}
 	}
+	/* Form section */
+	.form-container {
+		.form-header {
+			margin-bottom: 65px;
+		}
+		.form-section {
+			border: 1px solid #ccc;
+	
+			.form-main {
+				padding: 0 50px;
+			}
+	
+			.content {
+				background: $color-white;
+				position: relative;
+				top: -65px;
+	
+				h1 {
+					font-size: 102px;
+					color: #ddd;
+					font-weight: bold;
+				}
+				h3 {
+					font-size: 22px;
+					color: $color-black;
+				}
+				.description {
+					position: relative;
+					top: -48px;
+					background: $color-white;
+				}
+			}
+		}
+	}
+	/* Inspiring decor secion */
+	.carousel {
+		&#inspiringCarousel {
+		 .carousel-item {
+		  img {
+		   min-width: 100%;
+		   width: 100%;
+		  }
+		 }
+	  
+		 .carousel-control-next, .carousel-control-prev {
+		  width: 40px;
+		 }
+	  
+		 .about-carousel {
+		  position: absolute;
+		  bottom: 90px;
+		  background: #fff;
+		  width: 94%;
+		  margin: 0 35px;
+		  padding: 10px;
+		  text-align: center;
+	  
+		  h5 {
+		   display: inline-block;
+		  }
+	  
+		  a {
+		   position: absolute;
+		   right: 20px;
+		   font-size: 14px;
+		   color: #fc6c6e;
+		  }
+		 }
+		}
+	   }
 	/* Footer */
 	.top-footer {
 		background: #434343;

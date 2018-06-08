@@ -2,6 +2,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   /* Carousel */
   /* Navbar */
+  /* Form section */
+  /* Inspiring decor secion */
   /* Footer */
 }
 
@@ -11,6 +13,12 @@ body a:hover {
 
 body .fa-phone {
   transform: rotate(100deg);
+}
+
+@media (min-width: 1300px) {
+  body .container {
+    max-width: 1300px;
+  }
 }
 
 body h2 {
@@ -51,29 +59,16 @@ body header .navbar .nav-item .nav-link {
   padding: 0 10px;
 }
 
-body .carousel {
+body .carousel.header-carousel {
   margin-bottom: 4rem;
 }
 
-body .carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-@media (min-width: 40em) {
-  body .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-}
-
-body .carousel-item {
+body .carousel.header-carousel .carousel-item {
   height: 32rem;
   background-color: #777;
 }
 
-body .carousel-item > img {
+body .carousel.header-carousel .carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
@@ -160,6 +155,71 @@ body .navbar.mega-menu .navbar-nav > .nav-item > .nav-link:hover {
   body .navbar.mega-menu .dropdown .dropdown-menu:hover {
     display: block !important;
   }
+}
+
+body .form-container .form-header {
+  margin-bottom: 65px;
+}
+
+body .form-container .form-section {
+  border: 1px solid #ccc;
+}
+
+body .form-container .form-section .form-main {
+  padding: 0 50px;
+}
+
+body .form-container .form-section .content {
+  background: #fff;
+  position: relative;
+  top: -65px;
+}
+
+body .form-container .form-section .content h1 {
+  font-size: 102px;
+  color: #ddd;
+  font-weight: bold;
+}
+
+body .form-container .form-section .content h3 {
+  font-size: 22px;
+  color: #444;
+}
+
+body .form-container .form-section .content .description {
+  position: relative;
+  top: -48px;
+  background: #fff;
+}
+
+body .carousel#inspiringCarousel .carousel-item img {
+  min-width: 100%;
+  width: 100%;
+}
+
+body .carousel#inspiringCarousel .carousel-control-next, body .carousel#inspiringCarousel .carousel-control-prev {
+  width: 40px;
+}
+
+body .carousel#inspiringCarousel .about-carousel {
+  position: absolute;
+  bottom: 90px;
+  background: #fff;
+  width: 94%;
+  margin: 0 35px;
+  padding: 10px;
+  text-align: center;
+}
+
+body .carousel#inspiringCarousel .about-carousel h5 {
+  display: inline-block;
+}
+
+body .carousel#inspiringCarousel .about-carousel a {
+  position: absolute;
+  right: 20px;
+  font-size: 14px;
+  color: #fc6c6e;
 }
 
 body .top-footer {
