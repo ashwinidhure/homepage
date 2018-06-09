@@ -3,6 +3,7 @@ body {
   /* Carousel */
   /* Navbar */
   /* Form section */
+  /* Tools section */
   /* Inspiring decor secion */
   /* Footer */
 }
@@ -32,6 +33,7 @@ body h2 {
   color: #444;
   font-family: 'Abhaya Libre', serif;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
@@ -58,6 +60,29 @@ body h2 span:after, body h2 span:before {
 body h2 span:after {
   left: auto;
   right: -50px;
+}
+
+body h3 {
+  font-size: 22px;
+  color: #444;
+  font-weight: bold;
+}
+
+body h4 {
+  font-size: 26px;
+  color: #444;
+  font-family: "Abhaya Libre";
+  font-weight: bold;
+}
+
+@media (min-width: 769px) {
+  body h4 {
+    margin-bottom: 40px;
+  }
+}
+
+body .image-with-contents img {
+  margin-bottom: 35px;
 }
 
 body header {
@@ -110,10 +135,6 @@ body header .flag-phone-container .flag-dropdown {
   margin-right: 20px;
   cursor: pointer;
   display: inline-block;
-}
-
-body header .flag-phone-container .flag-dropdown img {
-  width: 20px;
 }
 
 body header .flag-phone-container .flag-dropdown .dropdown-toggle::after {
@@ -285,6 +306,7 @@ body .form-container .form-header {
 
 body .form-container .form-section {
   border: 1px solid #ccc;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
@@ -309,15 +331,41 @@ body .form-container .form-section .content h1 {
   font-weight: bold;
 }
 
-body .form-container .form-section .content h3 {
-  font-size: 22px;
-  color: #444;
-}
-
 body .form-container .form-section .content .description {
   position: relative;
   top: -48px;
   background: #fff;
+  width: 200px;
+}
+
+body .form-container .form-section .form-group {
+  padding: 0 20px;
+}
+
+body .form-container .form-section .form-group .form-control {
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+body .form-container .form-section .form-group .form-control:focus {
+  box-shadow: none;
+}
+
+body .form-container .form-section .btn {
+  position: relative;
+  bottom: -18px;
+  border-radius: 0;
+  min-width: 150px;
+}
+
+@media (min-width: 769px) {
+  body section {
+    padding: 50px 0;
+  }
+}
+
+body .endtoend-section {
+  background: #f6f6f6;
 }
 
 body .carousel#inspiringCarousel .carousel-item img {
@@ -326,7 +374,14 @@ body .carousel#inspiringCarousel .carousel-item img {
 }
 
 body .carousel#inspiringCarousel .carousel-control-next, body .carousel#inspiringCarousel .carousel-control-prev {
-  width: 40px;
+  width: 35px;
+}
+
+body .carousel#inspiringCarousel .carousel-control-next i, body .carousel#inspiringCarousel .carousel-control-prev i {
+  padding: 10px 8px;
+  background: #ddd;
+  font-size: 30px;
+  color: #333;
 }
 
 body .carousel#inspiringCarousel .about-carousel {
@@ -348,6 +403,66 @@ body .carousel#inspiringCarousel .about-carousel a {
   right: 20px;
   font-size: 14px;
   color: #fc6c6e;
+}
+
+body .interior-carousel {
+  padding: 0;
+}
+
+body .interior-carousel .carousel .carousel-item .left-content {
+  padding: 40px 40px 40px 3%;
+  background: #dddddd;
+}
+
+body .interior-carousel .carousel .carousel-item .left-content label {
+  background: #fff;
+  padding: 3px 8px;
+  margin-bottom: 30px;
+}
+
+body .interior-carousel .carousel .carousel-item .left-content button {
+  color: #fff;
+  background: #d6330d;
+  margin: 40px 0 30px;
+}
+
+body .interior-carousel .carousel .carousel-item .left-content > a {
+  display: block;
+  color: #d6330d;
+}
+
+body .interior-carousel .carousel .carousel-item .left-content ul {
+  display: inline-block;
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+}
+
+body .interior-carousel .carousel .carousel-item .left-content ul li:last-child {
+  margin-top: 15px;
+}
+
+body .interior-carousel .carousel .carousel-item .left-content ul li:last-child img {
+  padding-right: 10px;
+}
+
+body .interior-carousel .carousel .carousel-item .right-content {
+  padding: 0;
+}
+
+body .interior-carousel .carousel .carousel-item .right-content img {
+  width: 100%;
+  height: 100%;
+}
+
+body .interior-carousel .carousel .carousel-indicators {
+  margin-right: 0;
+  margin-left: 3%;
+  right: auto;
+}
+
+body .interior-carousel .carousel .carousel-indicators .active {
+  background: #f9c64d;
 }
 
 body .top-footer {

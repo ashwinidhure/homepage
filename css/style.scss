@@ -25,6 +25,7 @@ body {
 		color: $color-black;
 		font-family: 'Abhaya Libre', serif;
 		font-weight: bold;
+		margin-bottom: 30px;
 
 		@media (max-width: 767px) {
 			font-size: 24px;
@@ -49,6 +50,29 @@ body {
 				left: auto;
 				right: -50px;
 			}
+		}
+	}
+
+	h3 {
+		font-size: 22px;
+		color: $color-black;
+		font-weight: bold;
+	}
+
+	h4 {
+		font-size: 26px;
+		color: #444;
+		font-family: "Abhaya Libre";
+		font-weight: bold;
+
+		@media (min-width: 769px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	.image-with-contents {
+		img {
+			margin-bottom: 35px;
 		}
 	}
 
@@ -99,10 +123,6 @@ body {
 				margin-right: 20px;
 				cursor: pointer;
 				display: inline-block;
-	
-				img {
-					width: 20px;
-				}
 	
 				.dropdown-toggle {
 
@@ -262,6 +282,7 @@ body {
 		}
 		.form-section {
 			border: 1px solid #ccc;
+			margin-bottom: 30px;
 
 			@media (max-width: 767px) {
 				text-align: center;
@@ -281,54 +302,130 @@ body {
 					color: #ddd;
 					font-weight: bold;
 				}
-				h3 {
-					font-size: 22px;
-					color: $color-black;
-				}
 				.description {
 					position: relative;
 					top: -48px;
 					background: $color-white;
+					width: 200px;
+				}
+			}
+
+			.form-group {
+				padding: 0 20px;
+
+				.form-control {
+					border: 0;
+					border-bottom: 1px solid #ccc;
+
+					&:focus {
+						box-shadow: none;
+					}
+				}
+			}
+
+			.btn {
+				position: relative;
+				bottom: -18px;
+				border-radius: 0;
+				min-width: 150px;
+			}
+		}
+	}
+	/* Tools section */
+	section {
+		@media (min-width: 769px) {
+			padding: 50px 0;
+		}
+	}
+	.endtoend-section {
+		background: #f6f6f6;
+	}
+	/* Inspiring decor secion */
+	.carousel#inspiringCarousel {
+		.carousel-item img {
+			min-width: 100%;
+			width: 100%;
+		}
+		.carousel-control-next, .carousel-control-prev {
+			width: 35px;
+			i {
+				padding: 10px 8px;
+				background: #ddd;
+				font-size: 30px;
+				color: #333;
+			}
+		}
+		.about-carousel {
+			position: absolute;
+			bottom: 90px;
+			background: #fff;
+			width: 94%;
+			margin: 0 35px;
+			padding: 10px;
+			text-align: center;
+			h5 {
+				display: inline-block;
+			}
+			a {
+				position: absolute;
+				right: 20px;
+				font-size: 14px;
+				color: #fc6c6e;
+			}
+		}
+	}
+	.interior-carousel {
+		padding: 0;
+		.carousel {
+			.carousel-item {
+				.left-content {
+					padding: 40px 40px 40px 3%;
+					background: #dddddd;
+					label {
+						background: #fff;
+						padding: 3px 8px;
+						margin-bottom: 30px;
+					}
+					button {
+						color: #fff;
+						background: #d6330d;
+						margin: 40px 0 30px;
+					}
+					> a {
+						display: block;
+						color: #d6330d;
+					}
+					ul {
+						display: inline-block;
+						position: absolute;
+						bottom: 25px;
+						right: 30px;
+						li:last-child {
+							margin-top: 15px;
+							img {
+								padding-right: 10px;
+							}
+						}
+					}
+				}
+				.right-content {
+					padding: 0;
+					img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+			.carousel-indicators {
+				margin-right: 0;
+				margin-left: 3%;
+				right: auto;
+				.active {
+					background: #f9c64d;
 				}
 			}
 		}
 	}
-	/* Inspiring decor secion */
-	.carousel {
-		&#inspiringCarousel {
-		 .carousel-item {
-		  img {
-		   min-width: 100%;
-		   width: 100%;
-		  }
-		 }
-	  
-		 .carousel-control-next, .carousel-control-prev {
-		  width: 40px;
-		 }
-	  
-		 .about-carousel {
-		  position: absolute;
-		  bottom: 90px;
-		  background: #fff;
-		  width: 94%;
-		  margin: 0 35px;
-		  padding: 10px;
-		  text-align: center;
-	  
-		  h5 {
-		   display: inline-block;
-		  }
-	  
-		  a {
-		   position: absolute;
-		   right: 20px;
-		   font-size: 14px;
-		   color: #fc6c6e;
-		  }
-		 }
-		}
-	   }
 	/* Footer */
 	.top-footer {
 		background: #434343;
