@@ -339,6 +339,12 @@ body .navbar.mega-menu {
   }
 }
 
+@media (max-width: 767px) {
+  body .navbar.mega-menu .menu-action.collapsed {
+    padding: 0.25rem 0.63rem;
+  }
+}
+
 body .navbar.mega-menu .dropdown-menu {
   border: none;
   background-color: #fff !important;
