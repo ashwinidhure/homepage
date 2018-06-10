@@ -392,7 +392,11 @@ body .navbar.mega-menu .dropdown-menu figure {
 
 @media (max-width: 767px) {
   body .navbar.mega-menu .navbar-nav > .nav-item {
-    padding: 0px 8px;
+    padding: 0px 15px;
+  }
+  body .navbar.mega-menu .navbar-nav > .nav-item:first-child {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
   }
 }
 
@@ -427,6 +431,10 @@ body .navbar.mega-menu .navbar-nav > .nav-item > .nav-link:hover {
   border-bottom: 2px solid #d6330d;
 }
 
+body .navbar.mega-menu .navbar-nav .input-group {
+  margin-top: 10px;
+}
+
 @media (min-width: 768px) {
   body .navbar.mega-menu .dropdown {
     position: static;
@@ -445,9 +453,7 @@ body .navbar.mega-menu .navbar-nav > .nav-item > .nav-link:hover {
     position: absolute;
     top: 46px;
     right: 1%;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    padding: 0;
     width: 100%;
     transition: all 0.3s ease-in;
     z-index: 999;
