@@ -15,8 +15,6 @@ $(document).ready(function() {
           $(".navbar.mega-menu .dropdown-menu").mouseleave(function() {
               $(this).removeClass("show");
           });
-
-          // do something here
       }
   });
 
